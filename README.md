@@ -1,3 +1,3 @@
 # NCAI projects
 
-- [StudentAccess](studentaccess/index.html)
+- [StudentAccess](https://ncai-developers.github.io/studentaccess/)
