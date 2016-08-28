@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>NCAI</title>
-</head>
+<title>NCAI projects</title>
 <body>
-  <header>
-    Projects by NCAI students n stuff.
-  </header>
-  <ul>
-    <li>
-      <a href="studentaccess/">StudentAccess</a>
-    </li>
-  </ul>
+<xmp id="md" theme="darkly" style="display:none"></xmp>
+<script>
+  var md = document.getElementById('md');
+  
+  fetch('https://ncai-developers.github.io/README.md').then(function(res){
+    return res.text();
+  }).then(function(s){
+    mark(window, document, s, 'darkly');
+  });
+</script>
+<script src="strapdown.js"></script>
 </body>
 </html>
