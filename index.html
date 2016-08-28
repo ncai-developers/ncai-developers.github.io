@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
-<title>NCAI projects</title>
-<body>
-<script>
-  fetch('README.md').then(function(res){
-    return res.text();
-  }).then(function(s){
-    mark(window, document, s, 'paper');
-  });
-</script>
-<script src="strapdown.js"></script>
-</body>
+<head>
+  <title>NCAI projects</title>
+  <script src="strapdown.js"></script>
+  <script>
+    fetch('README.md').then(function(res){
+      return res.text();
+    }).then(function(s){
+      mark(window, document, s, 'paper');
+    });
+  </script>
+</head>
+<body></body>
 </html>
