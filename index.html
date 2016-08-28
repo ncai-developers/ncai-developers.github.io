@@ -2,16 +2,13 @@
 <html>
 <title>NCAI projects</title>
 <body>
-<xmp id="md" theme="darkly" style="display:none"></xmp>
 <script>
-  var md = document.getElementById('md');
-  
-  fetch('https://ncai-developers.github.io/README.md').then(function(res){
+  fetch('README.md').then(function(res){
     return res.text();
   }).then(function(s){
-    mark(window, document, s, 'darkly');
+    mark(window, document, s, 'paper');
   });
 </script>
-<script src="strapdown.js"></script>
+<script async src="strapdown.js"></script>
 </body>
 </html>

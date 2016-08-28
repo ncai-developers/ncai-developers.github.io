@@ -400,7 +400,8 @@ function mark(window, document, md, userTheme) {
   var newNode = document.createElement('div');
   newNode.className = 'container';
   newNode.id = 'content';
-  document.body.replaceChild(newNode, markdownEl);
+  document.body.appendChild(newNode);
+  //document.body.replaceChild(newNode, markdownEl);
 
   // Insert navbar if there's none
   /*
