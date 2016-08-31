@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>NCAI projects</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/3.2.2/es6-promise.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/1.0.0/fetch.min.js"></script>
-  <script src="strapdown.js"></script>
+  <title>bootmark</title>
+  <script src="lib/bootmark.bundle.min.js"></script>
+</head>
+<body>
+  <div id="bootmark-md"></div>
   <script>
-    fetch('README.md').then(function(res){
-      return res.text();
-    }).then(function(s){
-      mark(window, document, s, 'paper');
+    bootmark.md({
+      fetch: 'README.md',
+      toc:  false,
+      theme: 'yeti'
     });
   </script>
-</head>
-<body></body>
+</body>
 </html>
