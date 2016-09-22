@@ -2,17 +2,16 @@
 <html>
 <head>
   <title>NCAI Projects</title>
-  <script src="bootmark.bundle.min.js"></script>
+  <script src="https://obedm503.github.io/bootmark/dist/bootmark.bundle.min.js"></script>
 </head>
 <body>
-  <div id="bootmark-md"></div>
-  <script>
-    bootmark.md({
-      css:'bootmark.min.css',
-      fetch: 'README.md',
-      toc: false,
-      theme: 'yeti'
-    });
-  </script>
+<bootmark
+	css="https://obedm503.github.io/bootmark/dist/bootmark.min.css"
+	fetch="README.md"
+	html="{
+		theme:'yeti',
+		toc: false
+	}"
+	></bootmark>
 </body>
 </html>
